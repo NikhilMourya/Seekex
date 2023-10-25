@@ -1,6 +1,7 @@
 <template>
   <div class="home-main">
     <body-view />
+    <footer-view />
   </div>
 </template>
 
@@ -8,10 +9,12 @@
 import { Component, Vue } from 'vue-property-decorator';
  // @ is an alias to /src
 import BodyView from '@/views/BodyView.vue'
+import FooterView from '@/views/FooterView.vue'
 
 @Component({
   components: {
     BodyView,
+    FooterView,
   }
 })
 export default class HomeView extends Vue {}
