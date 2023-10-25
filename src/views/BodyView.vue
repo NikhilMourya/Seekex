@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main v-smooth-scroll>
     <banner-view :src="'https://cdn.fyndsigns.com/1698156726162-image--.png'" />
     <div class="body-1">
       <section class="category">
