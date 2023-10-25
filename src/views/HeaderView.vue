@@ -7,7 +7,7 @@
         <p>Call Us: 1234567890</p>
       </div>
     </section>
-    <section class="main-header">
+    <section class="main-header" id="main-header">
       <div><i class="fa-solid fa-bars"></i></div>
       <div>
         <p style="font-family: 'Playfair Display', serif">Logo Here</p>
@@ -32,9 +32,53 @@ import { Component, Vue } from "vue-property-decorator";
 //   //   HelloWorld,
 //   },
 // })
-export default {};
+export default {
+  name:'HeaderView',
+  data(){
+    return{
+      // that : undefined
+    }
+  },
+  methods:{
+    test:function(){
+      console.log(window.pageYOffset);
+    }
+  },
+  mounted(){
+    let mainHeader:any=document.getElementById('main-header');
+       window.addEventListener("scroll", function(){
+          //  that.windowTop = window.scrollY;
+          //  console.log(that.windowTop)
+          let top=window.pageYOffset;
+          // console.log(window.pageYOffset);
+          if(top>60){
+            mainHeader.style.position="fixed"
+          }
+          if(top<60){
+            mainHeader.style.position="static"
+          }
+
+
+       });
+    
+    
+  }
+};
 </script>
   <style lang="scss" scoped>
+  // .sub-header{
+  //   position: sticky;
+  //   width: 100%;
+  //   top: 0%;
+  //   z-index: 10;
+  // }
+  .main-header{
+    position: static;
+    width: 100%;
+    top: 0%;
+    z-index: 20;
+    transition: all 200ms ease-in;
+  }
 a {
   cursor: pointer;
 }

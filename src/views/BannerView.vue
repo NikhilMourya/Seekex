@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-      <img alt="Vue logo" :src="src">
+      <img loading="lazy" class="lazy" alt="Vue logo" :src="src">
     </div>
   </template>
   

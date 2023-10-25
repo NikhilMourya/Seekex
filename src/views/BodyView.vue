@@ -5,8 +5,8 @@
       <section class="category">
         <div class="item">
           <a href="#" class="item-link"
-            ><img
-              class="item-img"
+            ><img loading="lazy"
+              class="item-img lazy"
               alt="Vue logo"
               src="../assets/category/Group 244.png"
           /></a>
@@ -14,8 +14,8 @@
         </div>
         <div class="item">
           <a href="#" class="item-link"
-            ><img
-              class="item-img"
+            ><img loading="lazy"
+              class="item-img lazy"
               alt="Vue logo"
               src="../assets/category/Group 245.png"
           /></a>
@@ -23,8 +23,8 @@
         </div>
         <div class="item">
           <a href="#" class="item-link"
-            ><img
-              class="item-img"
+            ><img loading="lazy"
+              class="item-img lazy"
               alt="Vue logo"
               src="../assets/category/Group 246.png"
           /></a>
@@ -32,8 +32,8 @@
         </div>
         <div class="item">
           <a href="#" class="item-link"
-            ><img
-              class="item-img"
+            ><img loading="lazy"
+              class="item-img lazy"
               alt="Vue logo"
               src="../assets/category/Group 248.png"
           /></a>
@@ -41,8 +41,8 @@
         </div>
         <div class="item">
           <a href="#" class="item-link"
-            ><img
-              class="item-img"
+            ><img loading="lazy"
+              class="item-img lazy"
               alt="Vue logo"
               src="../assets/category/Group 249.png"
           /></a>
@@ -50,8 +50,8 @@
         </div>
         <div class="item">
           <a href="#" class="item-link"
-            ><img
-              class="item-img"
+            ><img loading="lazy"
+              class="item-img lazy"
               alt="Vue logo"
               src="../assets/category/Group 249.png"
           /></a>
@@ -61,15 +61,15 @@
       <section class="category-banner">
         <main class="top">
           <div class="item">
-            <img
-              class="item-img"
+            <img loading="lazy"
+              class="item-img lazy"
               alt="Vue logo"
               src="../assets/category/image 2.png"
             />
           </div>
           <div class="item">
-            <img
-              class="item-img"
+            <img loading="lazy"
+              class="item-img lazy"
               alt="Vue logo"
               src="../assets/category/image 3.png"
             />
@@ -78,24 +78,24 @@
         <main class="bottom">
           <div class="item">
             <a href="#" class="item-link"
-              ><img
-                class="item-img"
+              ><img loading="lazy"
+                class="item-img lazy"
                 alt="Vue logo"
                 src="../assets/category/image 4.png"
             /></a>
           </div>
           <div class="item">
             <a href="#" class="item-link"
-              ><img
-                class="item-img"
+              ><img loading="lazy"
+                class="item-img lazy"
                 alt="Vue logo"
                 src="../assets/category/image 6.png"
             /></a>
           </div>
           <div class="item">
             <a href="#" class="item-link"
-              ><img
-                class="item-img"
+              ><img loading="lazy"
+                class="item-img lazy"
                 alt="Vue logo"
                 src="../assets/category/image 5.png"
             /></a>
@@ -200,14 +200,14 @@
     <div class="body-1">
       <section class="offer-layout">
         <div class="offer-item">
-          <div class="offer-icon"><img src="../assets/diamond 1.png" /></div>
+          <div class="offer-icon"><img loading="lazy" class="lazy" src="../assets/diamond 1.png" /></div>
           <h3 class="offer-head">Hurry Up!</h3>
           <p class="offer-head1">85% OFF</p>
           <p class="offer-head2">Sale</p>
           <button>SHOP NOW</button>
         </div>
         <div class="offer-item">
-          <div class="offer-icon"><img src="../assets/discount 1.png" /></div>
+          <div class="offer-icon"><img loading="lazy" class="lazy" src="../assets/discount 1.png" /></div>
           <h3 class="offer-head">Hurry Up!</h3>
           <p class="offer-head1">85% OFF</p>
           <p class="offer-head2">Sale</p>
@@ -219,19 +219,19 @@
       <section class="service-child">
         <div class="service-container">
           <div class="service-item">
-            <img src="../assets/service/Group 199.png" />
+            <img loading="lazy" class="lazy" src="../assets/service/Group 199.png" />
             <!-- <h2>7 Days Return</h2> -->
           </div>
           <div class="service-item">
-            <img src="../assets/service/Group 200.png" />
+            <img loading="lazy" class="lazy" src="../assets/service/Group 200.png" />
             <!-- <h2>Quality Products</h2> -->
           </div>
           <div class="service-item">
-            <img src="../assets/service/Group 201.png" />
+            <img loading="lazy" class="lazy" src="../assets/service/Group 201.png" />
             <!-- <h2>Safe Payment</h2> -->
           </div>
           <div class="service-item">
-            <img src="../assets/service/Group 202.png" />
+            <img loading="lazy" class="lazy" src="../assets/service/Group 202.png" />
             <!-- <h2>24x7 Helpline</h2> -->
           </div>
         </div>
@@ -267,7 +267,7 @@ import CategoryCard from "@/components/CategoryCard.vue"; // @ is an alias to /s
     BannerView,
   },
 })
-export default class HomeView extends Vue {
+export default class BodyView extends Vue {
   public email = "";
   public listCategory:any = [
     {title:'Streetwear Collections',src:"https://cdn.fyndsigns.com/1698157875630-group---.png"},
@@ -336,6 +336,7 @@ export default class HomeView extends Vue {
     },
   ];
 }
+
 </script>
   <style lang="scss" scoped>
 

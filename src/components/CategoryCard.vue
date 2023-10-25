@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img :src="src" />
+    <img loading="lazy" class="lazy" :src="src" />
     <p class="overlay">{{ title }}</p>
   </div>
 </template>

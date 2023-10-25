@@ -6,53 +6,62 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
- // @ is an alias to /src
-import BodyView from '@/views/BodyView.vue'
-import FooterView from '@/views/FooterView.vue'
+import { Component, Vue } from "vue-property-decorator";
+// @ is an alias to /src
+import BodyView from "@/views/BodyView.vue";
+import FooterView from "@/views/FooterView.vue";
 
-@Component({
+// @Component({
+//   components: {
+
+//   }
+// })
+export default {
   components: {
     BodyView,
     FooterView,
-  }
-})
-export default class HomeView extends Vue {}
+  },
+};
 </script>
 <style lang="scss">
-  // font-family: 'Montserrat', sans-serif;
+// font-family: 'Montserrat', sans-serif;
 // font-family: 'Playfair Display', serif;
-*{
-  transition: all 200ms ease-in ;
+* {
+  transition: all 200ms ease-in;
 }
-button,.input-layout input{
-  font-family: 'Montserrat', sans-serif;
+button,
+.input-layout input {
+  font-family: "Montserrat", sans-serif;
 }
-.item-title,.offer-item,.subscribe-layout > .title{
-  font-family: 'Playfair Display', serif;
+.item-title,
+.offer-item,
+.subscribe-layout > .title {
+  font-family: "Playfair Display", serif;
 }
-.trending-header h2,.input-layout > button{
-  font-family: 'Playfair Display', serif;
+.trending-header h2,
+.input-layout > button {
+  font-family: "Playfair Display", serif;
 }
-.home-main{
+.home-main {
   overflow: hidden;
 }
-.pro-title,.size-list{
-  font-family: 'Montserrat', sans-serif;
+.pro-title,
+.size-list {
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
-.pro-price{
-  font-family: 'Montserrat', sans-serif;
+.pro-price {
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
-.item-title:hover{
+.item-title:hover {
   // padding-top: 5px;
   cursor: pointer;
 }
-.item-img:hover{
+.item-img:hover {
   transform: scale(1.05);
 }
-button:hover{
+button:hover {
   cursor: pointer;
   // font-size: 20px;
 }
@@ -65,7 +74,7 @@ button:hover{
 }
 
 .button span:after {
-  content: '\00bb';
+  content: "\00bb";
   position: absolute;
   opacity: 0;
   top: 0;

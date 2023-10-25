@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img :src="src" />
+    <img loading="lazy" class="lazy" :src="src" />
     <div class="product-info">
       <h4 class="pro-title">{{ title }}</h4>
       <p class="pro-price">&#8377;399 <span>&#8377;1299</span></p>
@@ -30,7 +30,7 @@ export default {
   props: ["title", "size", "src"],
   methods: {},
   created() {
-    console.log("creted", this.$props.src);
+    // console.log("creted", this.$props.src);
   },
 };
 </script>
